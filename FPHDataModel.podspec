@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'FPHDataModel'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of FPHDataModel.'
+  s.version          = '0.0.1'
+  s.summary          = 'Data model.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+data model for data parsing.
                        DESC
 
   s.homepage         = 'https://github.com/fupenghua/FPHDataModel'
@@ -30,8 +30,8 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'FPHDataModel/Classes/**/*'
-  
+  s.source_files = 'FPHDataModel/*.{h,m}'
+
   # s.resource_bundles = {
   #   'FPHDataModel' => ['FPHDataModel/Assets/*.png']
   # }
