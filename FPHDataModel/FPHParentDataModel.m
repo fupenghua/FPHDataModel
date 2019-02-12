@@ -74,7 +74,9 @@
 @implementation NSNumber (Value)
 
 - (NSNumber *)numberValue {
-    return self;
+    NSString *numString = [NSString stringWithFormat:@"%lf", [self doubleValue]];
+    NSDecimalNumber *nub = [NSDecimalNumber decimalNumberWithString:numString];
+    return nub;
 }
 @end
 

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'FPHDataModel'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'Data model.'
 
 # This description is used to generate tags and improve search results.
