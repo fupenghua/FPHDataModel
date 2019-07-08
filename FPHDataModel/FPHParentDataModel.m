@@ -78,6 +78,12 @@
     NSDecimalNumber *nub = [NSDecimalNumber decimalNumberWithString:numString];
     return nub;
 }
+
+- (NSString *)stringValue {
+    NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init];
+    [numberFormatter setNumberStyle:NSNumberFormatterDecimalStyle];
+    return [numberFormatter stringFromNumber:self];
+}
 @end
 
 @implementation NSArray(entity)
