@@ -80,9 +80,9 @@
 }
 
 - (NSString *)stringValue {
-    NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init];
-    [numberFormatter setNumberStyle:NSNumberFormatterDecimalStyle];
-    return [numberFormatter stringFromNumber:self];
+    NSString *numString = [NSString stringWithFormat:@"%lf", [self doubleValue]];
+    NSDecimalNumber *nub = [NSDecimalNumber decimalNumberWithString:numString];
+    return [NSString stringWithFormat:@"%@", nub];
 }
 @end
 
